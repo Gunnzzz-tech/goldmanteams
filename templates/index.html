@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clae Solutions Goldman Team - Job Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-clae">Clae</span>
+                <span class="logo-solutions">Solutions</span>
+                <div class="logo-goldman">
+                    <span class="goldman">GOLDMAN</span><span class="team">TEAM</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Column - Job Details -->
+            <div class="left-column">
+                <h1 class="job-title">Client Service Representative</h1>
+
+                <section class="section">
+                    <h2 class="section-title">Description</h2>
+                    <p class="description-text">
+                        Seeking a dynamic professional for our sales development position eager to contribute to our
+                        company's expansion. Essential skills include effective persuasion to transform potential
+                        customer leads into qualified prospects. The ideal candidate will excel in prospecting on
+                        social platforms and initiating meaningful connections. Previous customer service or sales
+                        experience is preferred, along with strong negotiation abilities and a penchant for engaging
+                        with individuals both over the phone and in face-to-face interactions. If you are enthusiastic
+                        about launching a career in sales, we encourage you to apply today!
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Responsibilities</h2>
+                    <ol class="list">
+                        <li>
+                            <strong>Attend Meetings and Events:</strong> Attend online and in-person meetings,
+                            trainings, trade shows, and sales events
+                        </li>
+                        <li>
+                            <strong>Monitor Competition:</strong> Keep an eye on what the competition is doing,
+                            and come up with a strategy to stay appealing to potential customers
+                        </li>
+                        <li>
+                            <strong>Prospect Leads:</strong> Prospect leads by doing a variety of actions, such as
+                            calling, texting, or emailing individuals, and following up with them at events
+                        </li>
+                        <li>
+                            <strong>Communicate with Leadership:</strong> Communicate with sales leadership to
+                            reach team goals and improve operations
+                        </li>
+                        <li>
+                            <strong>Utilize Social Media:</strong> Strategize how to use social media like Facebook,
+                            LinkedIn, and other social media outlets
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Qualifications</h2>
+                    <ol class="list">
+                        <li>
+                            <strong>Customer Service Experience:</strong> Previous customer service experience is
+                            highly desired
+                        </li>
+                        <li>
+                            <strong>Communication and Interpersonal Skills:</strong> Stellar communication,
+                            presentation, persuasion, interpersonal, and negotiating skills
+                        </li>
+                        <li>
+                            <strong>Educational Background:</strong> High school diploma required, bachelor's
+                            degree preferred
+                        </li>
+                        <li>
+                            <strong>Sales Process Knowledge:</strong> Understanding the sales process and how to
+                            enter information into client databases desired
+                        </li>
+                        <li>
+                            <strong>Organizational Skills:</strong> You are an organized, detail-oriented self-starter
+                            who loves contributing your team's goals
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Compensation</h2>
+                    <p class="compensation">$60,000 - $120,000 (Annually)</p>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">About Clae Goldman Team</h2>
+                    <p class="description-text">
+                        Clae Goldman Team specializes in providing community solar and third-party energy
+                        solutions door-to-door and retail. Our mission is to protect customers from rising energy
+                        costs, offer discounts, and promote green energy. Join us and make a positive impact on the
+                        environment while helping your community.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Right Column - Application Form -->
+            <div class="right-column">
+                <div class="banner">
+                    <div class="banner-text">
+                        <div class="megaphone-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 11l18-5v12L3 13v-2z"></path>
+                                <path d="M11.6 16.8a3 3 0 11-5.8-1.6"></path>
+                            </svg>
+                        </div>
+                        <div class="banner-heading">
+                            <span class="your-sales">Your Sales Journey</span><br />
+                            <span class="awaits">Awaits with</span>
+                        </div>
+                    </div>
+                    <div class="banner-logo">
+                        <span class="logo-clae-banner">Clae</span>
+                        <span class="logo-solutions-banner">Solutions</span>
+                        <div class="logo-goldman-banner">
+                            <span class="goldman-banner">GOLDMAN</span><span class="team-banner">TEAM</span>
+                        </div>
+                    </div>
+                    <!-- Team Image Placeholder -->
+                    <div class="team-image">
+                        <!-- Add your team image here -->
+                    </div>
+                    <div class="hiring-badge">
+                        <span class="we-are">WE ARE</span>
+                        <span class="hiring">HIRING</span>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <p class="form-instruction">
+                        <strong>Kindly complete all fields in the application form with accurate
+                        information. Review your details before submitting to ensure
+                        everything is correct. Thank you for applying!</strong>
+                    </p>
+
+                    <form id="applicationForm" action="/submit" method="POST" enctype="multipart/form-data" class="application-form">
+                        <input
+                            type="text"
+                            name="firstName"
+                            placeholder="First Name*"
+                            required
+                            class="form-input"
+                        />
+
+                        <input
+                            type="text"
+                            name="lastName"
+                            placeholder="Last Name*"
+                            required
+                            class="form-input"
+                        />
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email*"
+                            required
+                            class="form-input"
+                        />
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Phone*"
+                            required
+                            class="form-input"
+                        />
+
+                        <select
+                            name="market"
+                            required
+                            class="form-select"
+                        >
+                            <option value="">Market*</option>
+                            <option value="market1">Market 1</option>
+                            <option value="market2">Market 2</option>
+                            <option value="market3">Market 3</option>
+                        </select>
+
+                        <select
+                            name="jobPosition"
+                            required
+                            class="form-select"
+                        >
+                            <option value="">Job Position</option>
+                            <option value="client-service-rep">Client Service Representative</option>
+                            <option value="sales">Sales</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <div class="upload-section">
+                            <label for="resume" class="upload-label">
+                                <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="17 8 12 3 7 8"></polyline>
+                                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                                </svg>
+                                <span id="fileNameDisplay">Upload Resume</span>
+                            </label>
+                            <input
+                                type="file"
+                                id="resume"
+                                name="resume"
+                                accept=".pdf,.doc,.docx"
+                                class="file-input"
+                            />
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input
+                                    type="checkbox"
+                                    name="smsConsent"
+                                    class="checkbox-input"
+                                />
+                                <span class="checkbox-text">
+                                    I consent to receive SMS updates from Clae Solutions regarding job applications and hiring updates.
+                                    Frequency may vary. Message & data rates may apply. Text APPLY to (314) 916-1779 to start.
+                                    Reply STOP to unsubscribe anytime.
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input
+                                    type="checkbox"
+                                    name="marketingConsent"
+                                    class="checkbox-input"
+                                />
+                                <span class="checkbox-text">
+                                    I consent to receive non-marketing texts from Clae Solutions about onboarding, training,
+                                    and job-related notifications. Message & data rates may apply. Reply STOP to opt out anytime.
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="terms-link">
+                            <a href="#" class="link"><strong>Terms & Conditions & Privacy Policy</strong></a>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <section class="bottom-section">
+            <div class="bottom-content">
+                <h2 class="bottom-heading">WHY JOIN OUR TEAM?</h2>
+
+                <div class="center-video">
+                    <!-- Replace with your team video/image -->
+                    <img src="your-team-video-thumbnail.png" alt="Team Video" />
+                </div>
+
+                <div class="footer-content">
+                    <div class="footer-logo-section">
+                        <div class="footer-logo">
+                            <div>
+                                <span class="footer-logo-clae">Clae</span>
+                                <span class="footer-logo-solutions">Solutions</span>
+                            </div>
+                            <div class="footer-logo-goldman">
+                                <span class="footer-goldman">GOLDMAN</span><span class="footer-team">TEAM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-info">
+                        <p>📍 Address: 1120 S 6th St, Suite 120 St.Louis Missouri 63104, Business</p>
+                        <p>📧 Email: <a href="mailto:swertha@soclae.com">swertha@soclae.com</a></p>
+                        <p>📞 Phone number: (314) 788-6328</p>
+                    </div>
+
+                    <div class="footer-right">
+                        <div class="footer-links">
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+
+                        <div class="footer-social">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </div>
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#fff" stroke-width="2"/>
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="#fff"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2025 Clae Solutions<br/>All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
